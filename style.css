@@ -1,25 +1,45 @@
 *,
 *:before,
 *:after {
-    padding: 0;
-    margin: 0%;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
+  padding: 0;
+  margin: 0%;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
 body {
-    height: 100vh;
+  height: 100vh;
 }
 
 .container {
-    background-color: #ffffff;
-    border: 1px solid black;
-    width: 400px;
-    padding: 50px 30px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
-    border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  width: 400px;
+  padding: 50px 30px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 10px;
+}
+.container *:not(i) {
+  font-family: "Rubik", sans-serif;
+}
+.colors {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="color"] {
+  -webkit-appearance: none;
+  background-color: transparent;
+  width: 100px;
+  height: 45px;
+  cursor: pointer;
+}
+input[type="color"]::-webkit-color-swatch {
+  border-radius: 20px;
+  border: none;
 }
